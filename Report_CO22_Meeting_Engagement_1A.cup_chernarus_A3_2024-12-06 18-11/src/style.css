@@ -1,0 +1,233 @@
+body {
+	margin: 0px;
+	background-color: #ececec;
+	overflow-y: hidden;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+    right: auto;
+    bottom: auto;
+	font-family: "Inter";
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+/* Header
+*/
+
+@font-face {
+    font-family: "tSFont";
+    src: url(tS_EL.otf);
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url(Inter-Light.otf);
+}
+
+#header {
+	margin: 0px;
+	padding: 0px;
+	background-color: #252525;
+	color: white;
+}
+
+#header-sans {
+	font-family: "Inter";
+	font-weight: 100;
+	font-size: 21px;
+	line-height: 45px;
+}
+
+#header-title {
+	font-size: 24px;
+	padding-left: 40px;
+	font-family: "tSFont";
+}
+
+#header-title span {
+	background-color: #c52334;
+	padding: 0px 4px;
+	border-radius: 0px 8px 8px 8px;
+}
+
+#header-btn-up {
+	cursor: pointer;
+	position: absolute;
+	top: 8px;
+	right: 50px;
+	height: 30px;
+	width: 128px;
+}
+
+
+/* Navbar
+*/
+
+#navbar {
+	position: absolute;
+	width: 12%;
+	height: 100%;
+	background-color: #252525;
+	overflow: auto;
+}
+
+#wrapper {
+	padding-left: 15%;
+	padding-right: 15%;
+	height: 94%;
+	overflow-y: overlay;
+}
+
+#navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navbar ul li {
+	cursor: pointer;
+	padding: 10px;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	color:#fff;
+}
+
+#navbar ul li:hover {
+	background-color: #ffffff;
+	color: #333
+}
+
+.navbar-selected {
+	background-color: #c52334;
+	font-weight: 900;
+}
+
+.navbar-page-ok {}
+.navbar-page-warning {}
+.navbar-page-error {}
+
+.navbar-page-disabled {
+	color: #8d8d8d!important;
+}
+.navbar-page-disabled:hover {
+	cursor: unset!important;
+	background-color: unset!important;
+	color:#8d8d8d!important;
+}
+
+#footer {
+	padding-bottom: 10%;
+}
+
+/*
+@media screen and (max-width: 1600px) {
+	#wrapper {
+		padding: 5px;
+	}
+}
+	*/
+
+
+/* Collapsibles */
+.collapsible {
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+.collapsible-active, .collapsible:hover {
+	background-color: #555;
+}
+
+.content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	/* background-color: #f1f1f1; */
+}
+
+
+/* Code blocs
+*/
+.hljs-ln-numbers {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    text-align: center;
+    color: #ccc;
+    border-right: 1px solid #CCC;
+    vertical-align: top;
+    padding-right: 10px!important;
+    padding-left: 5px!important;
+	font-size: 16px;
+
+    /* your custom style here */
+}
+
+.hljs-ln-code {
+    padding-left: 10px!important;
+	font-size: 16px;
+}
+
+
+#raw-content-line pre {
+	background-color: rgb(255, 255, 255);
+	border-radius: 0px 0px 10px 10px;
+	padding: 10px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	overflow: auto;
+}
+
+
+
+/* Info lines
+*/
+.info-line {
+	padding: 5px;
+}
+
+.info-title {
+	font-weight: 600;
+	padding-bottom: 6px;
+}
+
+.info-value {
+	font-size: 18px;
+	padding-left: 32px;
+}
+
+.info-value-list {
+	padding-bottom: 10px;
+}
+
+.tag {
+	font-family: monospace;
+	padding: 2px;
+	margin: 1px;
+	border-radius: 7px;
+	text-align: center;
+}
+
+.info-value-dynai-zone > span {
+	color: #ffffff;
+    padding: 3px;
+    border-radius: 6px;
+}
